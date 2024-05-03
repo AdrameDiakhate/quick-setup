@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url = "postgresql://postgres:ada1998@localhost:5432/kick_setup"
+  // url  	    = "postgresql://kick-setup_owner:Sth3lKroEX0z@ep-curly-lab-a5ociif0-pooler.us-east-2.aws.neon.tech/kick-setup?sslmode=require"
+  // uncomment next line if you use Prisma <5.10
+  // directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+model User {
+  id          String    @id @default(uuid()) @db.Uuid
+  username    String
+  email       String    @unique
+  password    String
+  firstName   String
+  lastName    String
+  createdAt   DateTime  @default(now())
+}

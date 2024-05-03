@@ -1,0 +1,7 @@
+Integrer la page d'inscription                                                 |   In progress
+Integrer la page de connection                                                 |   Todo
+Creer une bdd postgres avec prisma  avec                                       |   Todo
+Faire le flow d'inscription avec verification de l'email                       |   Todo
+Faire le flow de connection avec email password                                |   Todo
+Faire le flow de connection oauth   | in                                       |   Todo
+Gere la redirection vers l'espace membre une fois qu'on est connecte           |   Todo
