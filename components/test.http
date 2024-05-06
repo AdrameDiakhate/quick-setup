@@ -1,17 +1,23 @@
-# POST http://localhost:3000/api/register
+POST http://localhost:3000/api/register
+
+{
+    "username": "test",
+    "email": "ndiakhate01998@gmail.com",
+    "password": "test111",
+    "confirmPassword": "test111",
+}
+
+
+# POST http://localhost:3000/api/send
 
 # {
-#     "username": "test",
-#     "email": "ndiakhate01998@gmail.com",
-#     "password": "test111",
-#     "confirmPassword": "test111",
+#     "recipient":["ndiakhate01998@gmail.com"],
+#     "subject": "test",
+#     "content": "<p> Hello world </p>"
 # }
 
 
-POST http://localhost:3000/api/send
+# POST http://localhost:3000/api/confirmation-email
 
-{
-    "recipient":["ndiakhate01998@gmail.com"],
-    "subject": "test",
-    "content": "<p> Hello world </p>"
-}
+# {
+# }
