@@ -15,7 +15,7 @@ function EmailConfirmed() {
     })
 
     const VerifyConfirmation = async () => {
-        const user = await fetch("is-user-confirmed", {
+        const user = await fetch("confirmation", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
